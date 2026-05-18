@@ -12,11 +12,6 @@ body {
   background-color: #fff;
 }
 
-h1 {
-  font-size: 56px;
-  line-height: 1.07;
-}
-
 h2 {
   font-size: 36px;
   line-height: 1.11;
@@ -34,12 +29,18 @@ h3 {
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: inherit;
 }
 
 button {
+  margin: 0;
+  padding: 0;
+  display: block;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 ul,
@@ -56,14 +57,18 @@ ul {
   list-style-type: none;
 }
 
+input {
+  font-family: inherit;
+}
+
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .container {
   margin: 0 auto;
+  padding: 0 16px;
   max-width: 1158px;
-  padding: 0 15px;
 }
 
 .logo {
@@ -95,8 +100,28 @@ ul {
 
 .card-img {
   display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .title {
   text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding: 120px 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.mobile-menu.is-open,
+.overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
