@@ -9,13 +9,13 @@
 .features-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 72px;
 }
 
 .feature-item {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 8px;
 }
 
@@ -71,7 +71,7 @@
     border-radius: 4px;
   }
 
-  .feature-icon {
+  .feature-icons {
     fill: #fff;
   }
 }

@@ -19,9 +19,15 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   padding: 72px 16px 40px;
+}
+
+.mobile-menu-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .mobile-menu-nav-list {
