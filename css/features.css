@@ -28,7 +28,7 @@
   width: 264px;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1158px) {
   .feature-title {
     font-weight: 700;
     font-size: 36px;
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;

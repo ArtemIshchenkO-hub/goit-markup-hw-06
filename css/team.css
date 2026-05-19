@@ -77,7 +77,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .team-list {
     gap: 24px;
   }

@@ -108,7 +108,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .hero-section.section {
     padding: 188px 0;
   }
@@ -129,7 +129,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) and (min-resolution: 2x) {
+@media screen and (min-width: 1158px) and (min-resolution: 2x) {
   .hero-section {
     background-image:
       linear-gradient(

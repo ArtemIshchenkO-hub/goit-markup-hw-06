@@ -27,7 +27,7 @@
     margin-right: 120px;
   }
 
-  .mobile-menu-icon {
+  .burger-menu {
     display: none;
   }
 
@@ -102,7 +102,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .header-section .container {
     padding: 0 15px;
     max-width: 1158px;

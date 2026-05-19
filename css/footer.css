@@ -15,9 +15,11 @@
 .left-footer-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 16px;
-  max-width: 288px;
+}
+
+.left-footer-content .logo {
+  align-self: center;
 }
 
 .footer-form-wrap,
@@ -58,7 +60,6 @@
 
 .footer-form-wrap {
   width: 100%;
-  max-width: 288px;
 }
 
 .footer-form {
@@ -133,6 +134,14 @@
     padding: 0 108px;
   }
 
+  .footer-form-input {
+    width: 264px;
+  }
+
+  .left-footer-content .logo {
+    align-self: flex-start;
+  }
+
   .left-footer-content {
     max-width: 264px;
   }
@@ -153,7 +162,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .footer.section {
     padding: 100px 0px;
   }
