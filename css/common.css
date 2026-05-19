@@ -43,7 +43,6 @@ button {
   background-color: transparent;
 }
 
-ul,
 p,
 h1,
 h2,
@@ -68,7 +67,7 @@ input {
 .container {
   margin: 0 auto;
   padding: 0 16px;
-  max-width: 320px;
+  width: 100%;
 }
 
 .logo {
@@ -109,6 +108,50 @@ input {
   text-align: center;
 }
 
+.close-modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 24px;
+  background-color: #e7e9fc;
+
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal-btn:hover,
+.close-modal-btn:focus {
+  background-color: #404bbf;
+  border-color: #404bbf;
+}
+
+.close-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal-btn:hover .close-icon,
+.close-modal-btn:focus .close-icon {
+  fill: #fff;
+}
+
+.mobile-menu.is-open,
+.overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -124,11 +167,4 @@ input {
     max-width: 1158px;
     padding: 0 15px;
   }
-}
-
-.mobile-menu.is-open,
-.overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
 }
